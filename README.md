@@ -1,5 +1,5 @@
 
-# Uninteresting News Blocker
+# Uninteresting News Blocker (Yahoo! JAPAN only)
 詳細な説明:  
 [https://www.tekutechlabo.com/2023/03/uninteresting-news-blocker.html](https://www.tekutechlabo.com/2023/03/uninteresting-news-blocker.html)
 
