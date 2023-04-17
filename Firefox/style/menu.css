@@ -1,0 +1,136 @@
+body {
+    width: 250px;
+    min-height: 250px;
+    overflow: hidden;
+    user-select: none;
+    background-color: rgb(242, 242, 242);
+    margin: 0px;
+    padding: 0px;
+}
+
+.main {
+    margin: 0.5em;
+    text-align: center;
+    font-size: 90%;
+}
+
+h1 {
+    font-size: 1.3em;
+    color: black;
+    text-align: center;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+h2 {
+    font-size: 1.3em;
+    color: black;
+    text-align: center;
+    margin: 0.5em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    padding: 5px 30px;
+    display: flex;
+}
+
+li:hover {
+    background-color: #eeeeee;
+}
+
+button {
+    background-color: #cccccc;
+}
+
+input {
+    width: 80%;
+    font-size: 1.1em;
+    outline: 0;
+}
+
+image {
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+.title {
+    background-color: #cccccc;
+    margin: 0px;
+    padding: 10px 10px;
+    display: flex;
+}
+
+.menuList {
+    margin: 0px 0px;
+    padding: auto;
+}
+
+.center {
+    margin: auto;
+    padding: auto;
+}
+
+.explanation {
+    font-size: small;
+    text-align: center;
+    color: #222222;
+    margin: 0px 0px;
+    padding: 10px 10px;
+    border-style: double;
+    border-color: #acacac;
+}
+
+.div-button {
+    width: 83%;
+    text-align: center;
+    margin: 1em auto;
+    padding: 0.2em 0;
+    background-color: #cccccc;
+}
+
+.hide-image-only {
+    display: flex;
+    align-items: center;
+}
+
+.hide-image-only-checkbox {
+    width: 1.5em;
+    margin-left: 1em;
+}
+
+.hide-image-only-text {
+    width: 100%;
+    text-align: center;
+}
+
+.word-list {
+    margin: .5em;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.word-list-image {
+    width: 1.3em;
+    margin: 0 0.3em;
+}
+
+.word-list-word {
+    margin: 0 auto;
+}
+
+.top-image {
+    margin-left: 1em;
+}

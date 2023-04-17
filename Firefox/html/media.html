@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Uninteresting News Blocker Menu</title>
+    <!-- TODO: アドオンから読み込む -->
+    <link rel="stylesheet" href="../style/menu.css">
+</head>
+
+<body>
+    <div class="title">
+        <img src="../image/back.png" class="top-image" width="32px" id="back">
+        <h1>UNBlocker</h1>
+    </div>
+
+    <div class="main">
+        <h2>メディアを追加</h2>
+        <input type="text" id="wordInput" value="">
+
+        <div class="div-button hide-image-only" id="hideImageOnly">
+            <img class="hide-image-only-checkbox" src="../image/image.png" id="image">
+            <div class="hide-image-only-text">画像のみ非表示</div>
+        </div>
+
+        <div class="div-button add-word" id="addMedia">
+            追加
+        </div>
+        <div class="div-button delete-previous-word" id="deletePreviousMedia">
+            前回追加したメディアを削除
+        </div>
+        <div class="div-button show-all-words" id="showAllMedia">
+            すべてメディアを表示
+        </div>
+    </div>
+
+    <script src="../js/menu.js"></script>
+</body>
+
+</html>
