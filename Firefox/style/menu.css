@@ -12,6 +12,8 @@ body {
     margin: 0.5em;
     text-align: center;
     font-size: 90%;
+    max-height: 350px;
+    overflow:auto;
 }
 
 h1 {

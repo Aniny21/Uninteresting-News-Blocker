@@ -1,3 +1,5 @@
+"use strict";
+
 // JSONをローカルストレージから読み込み
 chrome.storage.local.get("blockList", function (result) {
     if (result.blockList === undefined) {

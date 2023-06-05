@@ -1,3 +1,5 @@
+"use strict";
+
 // JSONの読み込みが完了したか  // Whether the JSON loading is complete
 let isJsonLoaded = false;
 
@@ -83,7 +85,7 @@ try {
         location.assign("media.html");
     }
     document.getElementById("settings").onclick = function () {
-        location.assign("settings.html");
+        window.open("../options/options.html");
     }
     document.getElementById("support").onclick = function () {
         location.assign("support.html");
