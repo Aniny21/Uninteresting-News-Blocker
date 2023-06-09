@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Uninteresting News Blocker (JPN)",
-    "version": "1.2.1",
+    "version": "1.2.3",
     "description": "yahoo.co.jpの興味のないニュースをブロックします。",
     "icons": {
         "32": "icons/icon_32.png",
@@ -14,8 +14,7 @@
         "activeTab",
         "tabs",
         "contextMenus",
-        "menus",
-        "downloads"
+        "menus"
     ],
     "browser_action": {
         "default_icon": "icons/icon_48.png",

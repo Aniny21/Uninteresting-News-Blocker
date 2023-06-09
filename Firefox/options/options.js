@@ -19,11 +19,10 @@ document.getElementById("exportSettings").addEventListener("click", function () 
         let json = JSON.parse(result.blockList);
         let blob = new Blob([JSON.stringify(json)], { type: "application/json" });
         let url = URL.createObjectURL(blob);
-        chrome.downloads.download({
-            url: url,
-            filename: "UNBlocker.json",
-            saveAs: true
-        });
+        let a = document.createElement("a");
+        a.href = url;
+        a.download = "UNBlocker.json";
+        a.click();
     });
 });
 
@@ -47,6 +46,11 @@ document.getElementById("importSettings").addEventListener("click", function () 
             chrome.storage.local.set({
                 blockList: JSON.stringify(json)
             });
+            
+
+            // 説明文を更新する
+            let explanation = document.getElementById("explanation");
+            explanation.innerText = `ブロックリストを${file.name}で上書きしました。`;
         });
         reader.readAsText(file);
     });
