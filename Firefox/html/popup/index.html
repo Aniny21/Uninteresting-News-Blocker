@@ -5,32 +5,31 @@
     <meta charset="UTF-8">
     <title>Uninteresting News Blocker Menu</title>
     <!-- TODO: アドオンから読み込む -->
-    <link rel="stylesheet" href="../style/menu.css">
+    <link rel="stylesheet" href="/css/global.css">
 </head>
 
 <body>
     <div class="title"> 
-        <img src="../icons/icon_96.png" width="32px" alt="add-on_icon" class="top-image">
+        <img src="/icons/icon_96.png" width="32px" alt="add-on_icon" class="top-image">
         <h1>UNBlocker</h1>
     </div>
-
     <div class="menuList">
         <ul>
             <li id="word">
-                <img src="../image/image.png" alt="Image" id="image">
+                <img src="/images/image.png" alt="Image" id="image">
                 <div class=center>用語ブロック</div>
             </li>
             <li id="media">
-                <img src="../image/media.png" alt="Media">
+                <img src="/images/media.png" alt="Media">
                 <div class=center>メディアブロック</div>
             </li>
             <li id="settings">
-                <img src="../image/settings.png" alt="Settings">
-                <div class=center>Add-on 設定</div>
+                <img src="/images/settings.png" alt="Settings">
+                <div class=center>アドオン設定</div>
             </li>
             <li id="support">
-                <img src="../image/support.png" alt="Support">
-                <div class=center>Add-on開発を支援</div>
+                <img src="/images/support.png" alt="Support">
+                <div class=center>アドオン開発を支援</div>
             </li>
         </ul>
         <ul class=explanation>
@@ -41,7 +40,9 @@
             </div>
         </ul>
     </div>
-    <script src="../js/menu.js"></script>
+    <script defer src="/js/lib/jquery.min.js"></script>
+    <script defer src="/js/utils/storage.js"></script>
+    <script defer src="/js/popup.js"></script>
 </body>
 
 </html>

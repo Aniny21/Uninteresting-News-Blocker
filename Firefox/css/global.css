@@ -13,7 +13,7 @@ body {
     text-align: center;
     font-size: 90%;
     max-height: 350px;
-    overflow:auto;
+    overflow: auto;
 }
 
 h1 {
@@ -55,7 +55,7 @@ button {
     background-color: #cccccc;
 }
 
-input {
+input[type="text"] , input[type="color"] {
     width: 80%;
     font-size: 1.1em;
     outline: 0;
@@ -65,6 +65,13 @@ image {
     margin: auto;
     display: block;
     text-align: center;
+}
+
+.flex {
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .title {
@@ -135,4 +142,14 @@ image {
 
 .top-image {
     margin-left: 1em;
+}
+
+input[type="checkbox"] {
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0.5em;
+}
+
+.spacer {
+    padding: 0.5em 0;
 }

@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <title>Uninteresting News Blocker Menu</title>
     <!-- TODO: アドオンから読み込む -->
-    <link rel="stylesheet" href="../style/menu.css">
+    <link rel="stylesheet" href="/css/global.css">
 </head>
 
 <body>
     <div class="title">
-        <img src="../image/back.png" class="top-image" width="32px" id="back">
+        <img src="/images/back.png" class="top-image" width="32px" id="back">
         <h1>UNBlocker</h1>
     </div>
 
@@ -19,7 +19,7 @@
         <input type="text" id="wordInput" value="">
 
         <div class="div-button hide-image-only" id="hideImageOnly">
-            <img class="hide-image-only-checkbox" src="../image/image.png" id="image">
+            <img class="hide-image-only-checkbox" src="/images/image.png" id="image">
             <div class="hide-image-only-text">画像のみ非表示</div>
         </div>
 
@@ -29,12 +29,15 @@
         <div class="div-button delete-previous-word" id="deletePreviousWord">
             前回追加した用語を削除
         </div>
-        <div class="div-button show-all-words" id="showAllWords">
+        <!-- MediaとWordで共通のjsを使っているため、idをshowAllWordsにすると動かない -->
+        <div class="div-button show-all-words" id="showAllWord">
             すべて用語を表示
         </div>
     </div>
 
-    <script src="../js/menu.js"></script>
+    <script defer src="/js/lib/jquery.min.js"></script>
+    <script defer src="/js/utils/storage.js"></script>
+    <script defer src="/js/popup.js"></script>
 </body>
 
 </html>

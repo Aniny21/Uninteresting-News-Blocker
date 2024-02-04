@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>UNBlocker</title>
+    <!-- TODO: アドオンから読み込む -->
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="shortcut icon" href="/icons/icon_96.png">
+</head>
+
+<body style="width: 500px">
+    <div class="title">
+        <img src="/icons/icon_96.png" width="32px" alt="add-on_icon" class="top-image">
+        <h1>UNBlocker</h1>
+    </div>
+    <div class="main" style="max-height: none;">
+        <h2>画像設定</h2>
+        <div>非表示にした画像の色</div>
+        <input type="color" id="imageColor" value="#000000">
+        <div class="div-button" id="resetImageColor">
+            デフォルトに戻す
+        </div>
+
+        <div class="spacer"></div>
+
+        <h2>広告設定</h2>
+        <div class="flex" style="text-align: center;">
+            <div>広告リクエストをブロックする</div>
+            <input type="checkbox" id="adBlock">
+        </div>
+        
+        <div class="spacer"></div>
+
+        <h2>データ設定</h2>
+        <div>（現在はブロックリストのみ）</div>
+        <div class="div-button" id="exportSettings">
+            設定のエクスポート
+        </div>
+        <div class="div-button" id="importSettings">
+            設定のインポート
+        </div>
+
+        <div class="spacer"></div>
+
+        <ul class=explanation id="explanation">
+            ファイルの読み込みのために<br>新規タブで開いています
+        </ul>
+    </div>
+    <script defer src="/js/lib/jquery.min.js"></script>
+    <script defer src="/js/utils/storage.js"></script>
+    <script defer src="/js/utils/color.js"></script>
+    <script defer src="/js/options.js"></script>
+</body>
+
+</html>

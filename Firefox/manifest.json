@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
-    "name": "Uninteresting News Blocker (JPN)",
-    "version": "1.2.3",
+    "name": "Uninteresting News Blocker",
+    "version": "1.3.1",
     "description": "yahoo.co.jpの興味のないニュースをブロックします。",
     "icons": {
         "32": "icons/icon_32.png",
@@ -10,23 +10,24 @@
     },
     "permissions": [
         "*://*.yahoo.co.jp/*",
+        "*://*.yimg.jp/*",
         "storage",
-        "activeTab",
-        "tabs",
-        "contextMenus",
-        "menus"
+        "webRequest",
+        "webRequestBlocking"
     ],
     "browser_action": {
         "default_icon": "icons/icon_48.png",
-        "default_title": "Uninteresting News Blocker (JPN)",
-        "default_popup": "html/menu.html"
+        "default_title": "Uninteresting News Blocker",
+        "default_popup": "html/popup/index.html"
     },
     "options_ui": {
-        "page": "options/options.html"
+        "page": "html/options/index.html"
     },
     "background": {
         "scripts": [
-            "js/background.js"
+            "js/utils/storage.js",
+            "js/utils/color.js",
+            "js/background/background.js"
         ]
     },
     "content_scripts": [
@@ -35,7 +36,36 @@
                 "*://*.yahoo.co.jp/*"
             ],
             "js": [
-                "js/content.js"
+                "js/utils/storage.js",
+                "js/utils/content-utils.js",
+                "js/adblock.js"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "matches": [
+                "*://www.yahoo.co.jp/*"
+            ],
+            "js": [
+                "js/content/www-yahoo-co-jp.js"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "matches": [
+                "*://news.yahoo.co.jp/*"
+            ],
+            "js": [
+                "js/content/news-yahoo-co-jp.js"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "matches": [
+                "*://search.yahoo.co.jp/*"
+            ],
+            "js": [
+                "js/content/search-yahoo-co-jp.js"
             ],
             "run_at": "document_start"
         }
